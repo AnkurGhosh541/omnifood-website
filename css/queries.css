@@ -1,0 +1,408 @@
+/****************************************/
+/* BELOW 1344px (smaller laptops) */
+/****************************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item:nth-child(1) {
+    display: none;
+  }
+
+  .gallery-item:nth-child(3) {
+    display: none;
+  }
+
+  .gallery-item:nth-child(7) {
+    display: none;
+  }
+
+  .gallery-item:nth-child(9) {
+    display: none;
+  }
+}
+
+/****************************************/
+/* BELOW 1200px (landscape tables) */
+/****************************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .gallery-item:nth-child(odd) {
+    display: none;
+  }
+}
+
+/****************************************/
+/* BELOW 944px (portrait tables) */
+/****************************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .gallery-item:nth-child(odd) {
+    display: block;
+  }
+
+  .pricing-plan {
+    width: 80%;
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.98);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+
+    /* To hide an element without display:none */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/****************************************/
+/* BELOW 800px (medium tablets) */
+/****************************************/
+
+@media (max-width: 50em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .meal {
+    width: 90%;
+    justify-self: center;
+  }
+
+  .meal:hover {
+    transform: none;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .diets .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-plan {
+    width: 85%;
+  }
+}
+
+/****************************************/
+/* BELOW 710px (small tablets) */
+/****************************************/
+
+@media (max-width: 45em) {
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .meal {
+    width: 100%;
+  }
+
+  .diets .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+}
+
+/****************************************/
+/* BELOW 624px */
+/****************************************/
+
+@media (max-width: 39em) {
+  .price-per-month {
+    display: none;
+  }
+
+  .plan-text span {
+    display: inline;
+  }
+}
+
+/****************************************/
+/* BELOW 560px (phones) */
+/****************************************/
+
+@media (max-width: 35em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    width: 70%;
+    padding: 2.4rem 1.6rem;
+  }
+
+  .btn--full {
+    margin-right: 0 !important;
+    margin-bottom: 2rem;
+  }
+
+  .btn--outline {
+    margin-bottom: 3.2rem;
+  }
+
+  .btn--form {
+    width: 100%;
+    padding: 1.6rem;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 3.6rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+    justify-self: center;
+  }
+
+  .logos img:nth-child(1),
+  .logos img:nth-child(3) {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .logos img:nth-child(1) {
+    justify-self: end;
+  }
+
+  .logos img:nth-child(3) {
+    justify-self: start;
+  }
+
+  .logos img:nth-child(2),
+  .logos img:nth-child(4),
+  .logos img:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .step-image-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-image-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-image-box {
+    transform: translateY(2.4rem);
+  }
+
+  .diets .list {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .price-per-month {
+    display: inline;
+  }
+
+  .plan-text span {
+    display: none;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.6rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
