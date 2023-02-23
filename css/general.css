@@ -249,6 +249,10 @@ body {
   margin-bottom: 4.8rem !important;
 }
 
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
 strong {
   font-weight: 500;
 }

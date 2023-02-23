@@ -8,11 +8,13 @@ year.textContent = currentYear;
 ///////////////////////////////////////////////////////////
 // make mobile navigation work
 
+const root = document.documentElement;
 const headerEl = document.querySelector(".header");
 const navBtn = document.querySelector(".btn-mobile-nav");
 
 navBtn.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
+  root.classList.toggle("overflow-hidden");
 });
 
 ///////////////////////////////////////////////////////////
@@ -36,8 +38,10 @@ allLinks.forEach(link => {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
 
-      if (link.classList.contains("main-nav-link"))
+      if (link.classList.contains("main-nav-link")) {
         headerEl.classList.toggle("nav-open");
+        root.classList.toggle("overflow-hidden");
+      }
     }
   });
 });
