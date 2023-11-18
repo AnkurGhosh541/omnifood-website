@@ -39,7 +39,6 @@ allLinks.forEach(link => {
 
       if (link.classList.contains("main-nav-link")) {
         headerEl.classList.toggle("nav-open");
-        root.classList.toggle("overflow-hidden");
       }
     }
   });
