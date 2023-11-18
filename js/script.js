@@ -14,7 +14,6 @@ const navBtn = document.querySelector(".btn-mobile-nav");
 
 navBtn.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
-//  root.classList.toggle("overflow-hidden");
 });
 
 ///////////////////////////////////////////////////////////
